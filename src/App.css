@@ -1,0 +1,44 @@
+  /* 
+     todo app
+     
+
+
+
+
+  *//* In App.css or your custom styles */
+.card-container {
+   display: flex;
+   flex-wrap: wrap;  /* Ensures that cards wrap to the next line */
+   justify-content: space-around; /* Align cards with space between them */
+   gap: 1rem; /* Adds some space between cards */
+   padding: 1rem; /* Optional padding around the container */
+ }
+ 
+ .card {
+   width: 18rem;  /* Width of each card */
+   box-sizing: border-box; /* Makes sure padding doesn't affect width */
+   border: 1px solid #ddd;  /* Optional, adds border around cards */
+   border-radius: 8px;  /* Optional, rounds the corners */
+   overflow: hidden;  /* Ensures content fits within card */
+ }
+ 
+ .card img {
+   width: 100%;
+   height: 12rem;
+   object-fit: cover; /* Ensures image covers the space */
+ }
+ 
+ .card-body {
+   padding: 1rem;
+ }
+ 
+ .card-title {
+   font-size: 1.2rem;
+   font-weight: bold;
+ }
+ 
+ .card-text {
+   font-size: 1rem;
+   color: #555;
+ }
+ 
