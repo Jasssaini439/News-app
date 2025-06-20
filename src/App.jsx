@@ -10,7 +10,8 @@ import LoadingBar from 'react-top-loading-bar';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const API_KEY = "7074e877dfd44d1c84572a697eaa019d";
-const API_URL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
+const API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=7074e877dfd44d1c84572a697eaa019d
+`;
 
 
 const App = () => {

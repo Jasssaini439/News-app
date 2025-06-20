@@ -3,7 +3,8 @@ import LoadingBar from 'react-top-loading-bar';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const API_KEY = "7074e877dfd44d1c84572a697eaa019d";
-const SPORTS_API_URL = `https://newsapi.org/v2/everything?q=sports&apiKey=${API_KEY}`;
+const SPORTS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=7074e877dfd44d1c84572a697eaa019d
+`;
 
 const Sports = () => {
   const [articles, setArticles] = useState([]);
