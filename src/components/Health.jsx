@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import LoadingBar from 'react-top-loading-bar';
 
-const API_KEY = "038cdb0d56314d0295fe896c1ade75c0";
-const Health_API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=7074e877dfd44d1c84572a697eaa019d`;
+const API_KEY = "7074e877dfd44d1c84572a697eaa019d";
+const Health_API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${API_KEY}`;
 
 const Health = () => {
   const [articles, setArticles] = useState([]);
@@ -18,7 +18,7 @@ const Health = () => {
     const fetchHealthNews = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`${Health_API_URL}&page=${page}&pageSize=20`);
+        const response = await fetch(`${Health_API_URL}?page=${page}`);
         setProgress(70);
         const data = await response.json();
         setProgress(100);

@@ -3,7 +3,7 @@ import LoadingBar from 'react-top-loading-bar';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
 const API_KEY = "7074e877dfd44d1c84572a697eaa019d";
-const SPORTS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=7074e877dfd44d1c84572a697eaa019d
+const SPORTS_API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=7074e877dfd44d1c84572a697eaa019d
 `;
 
 const Sports = () => {
@@ -11,7 +11,7 @@ const Sports = () => {
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [page, setPage] = useState(1); 
-  const [hasMore, setHasMore] = useState(true); 
+  const [hasMore, setHasMore] = useState(true);  
 
   useEffect(() => {
     const fetchSportsNews = async () => {
